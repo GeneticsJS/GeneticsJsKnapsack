@@ -10,7 +10,7 @@ The web is deployed and tested on Chrome.
 You can test the webpage here:
 
 <h3 align="center">
-  <a href="https://cristianabrante.github.io/GeneticsJsKnapsack/">
+  <a href="https://geneticsjs.github.io/GeneticsJsKnapsack/">
     KnapsackGenetisjs (hosted on Github Pages)
   </a>
 </h3>
