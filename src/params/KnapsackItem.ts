@@ -1,5 +1,5 @@
 import * as yup from "yup";
-import Generator from "genetics-js/lib/lib/generator/utils/Generator";
+import Generator from "genetics-js/lib/generator/utils/Generator";
 import { NumericRange } from "genetics-js";
 import { DEFAULT_CAPACITY } from "./KnapsackParams";
 

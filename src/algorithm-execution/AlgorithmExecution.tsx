@@ -2,9 +2,9 @@ import React from "react";
 import { KnapsackParameters } from "../params/KnapsackParams";
 import { AlgorithmParameters } from "../params/AlgorithmParams";
 import { KnapsackItem, NUMBER_OF_DEFAULT_ITEMS } from "../params/KnapsackItem";
-import EvolutionaryAlgorithm, {
+import { EvolutionaryAlgorithm, 
   EvolutionaryAlgorithmParams
-} from "genetics-js/lib/lib/algorithms/EvolutionaryAlgorithm";
+} from "genetics-js/lib/algorithms/EvolutionaryAlgorithm";
 import {
   BinaryIndividual,
   BitwiseMutationParams,
@@ -13,20 +13,20 @@ import {
   NPointsCrossover,
   UniformCrossover
 } from "genetics-js";
-import BinaryGenerator, {
+import { BinaryGenerator, 
   BinaryGeneratorParams
-} from "genetics-js/lib/lib/generator/binary/BinaryGenerator";
-import FitnessProportionalSelection, {
+} from "genetics-js/lib/generator/binary/BinaryGenerator";
+import { FitnessProportionalSelection,
   FitnessProportionalSelectionParams
-} from "genetics-js/lib/lib/selection/base/FitnessProportionalSelection";
-import Generator from "genetics-js/lib/lib/generator/utils/Generator";
-import StochasticUniversalSampling from "genetics-js/lib/lib/selection/implementation/StochasticUniversalSamplingSe";
-import RouletteWheel from "genetics-js/lib/lib/selection/implementation/RouletteWheel";
-import FitnessBased from "genetics-js/lib/lib/selection/replacement/FitnessBased";
-import AgeBased from "genetics-js/lib/lib/selection/replacement/AgeBased";
-import MaxGenerations from "genetics-js/lib/lib/termination/MaxGenerations";
-import FitnessFunction from "genetics-js/lib/lib/fitness/FitnessFunction";
-import Population from "genetics-js/lib/lib/population/Population";
+} from "genetics-js/lib/selection/base/FitnessProportionalSelection";
+import { Generator } from "genetics-js/lib/generator/utils/Generator";
+import { StochasticUniversalSamplingSe } from "genetics-js/lib/selection/implementation/StochasticUniversalSamplingSe";
+import { RouletteWheel } from "genetics-js/lib/selection/implementation/RouletteWheel";
+import { FitnessBased } from "genetics-js/lib/selection/replacement/FitnessBased";
+import { AgeBased } from "genetics-js/lib/selection/replacement/AgeBased";
+import { MaxGenerations } from "genetics-js/lib/termination/MaxGenerations";
+import { FitnessFunction } from "genetics-js/lib/fitness/FitnessFunction";
+import { Population } from "genetics-js/lib/population/Population";
 import AlgorithmStatistics from "./AlgorithmStatistics";
 import PopulationRenderer from "./PopulationRenderer";
 import { Theme, WithStyles, withStyles } from "@material-ui/core";
@@ -173,7 +173,7 @@ class AlgorithmExecution extends React.Component<
         subSelection:
           props.algorithmParams.selectionType === "rouletteWheel"
             ? new RouletteWheel()
-            : new StochasticUniversalSampling()
+            : new StochasticUniversalSamplingSe()
       },
       crossover,
       crossoverParams,

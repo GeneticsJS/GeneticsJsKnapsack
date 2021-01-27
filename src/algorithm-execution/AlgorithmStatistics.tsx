@@ -12,9 +12,9 @@ import {
   withStyles,
   Theme
 } from "@material-ui/core";
-import EvolutionaryAlgorithm from "genetics-js/lib/lib/algorithms/EvolutionaryAlgorithm";
+import { EvolutionaryAlgorithm } from "genetics-js/lib/algorithms/EvolutionaryAlgorithm";
 import { BinaryIndividual, BitwiseMutationParams } from "genetics-js";
-import { BinaryGeneratorParams } from "genetics-js/lib/lib/generator/binary/BinaryGenerator";
+import { BinaryGeneratorParams } from "genetics-js/lib/generator/binary/BinaryGenerator";
 
 const styles = (theme: Theme) => ({
   title: {

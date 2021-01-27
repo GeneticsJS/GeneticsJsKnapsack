@@ -1,14 +1,14 @@
 import React from "react";
 
 import { KnapsackItem } from "./params/KnapsackItem";
-import EvolutionaryAlgorithm from "genetics-js/lib/lib/algorithms/EvolutionaryAlgorithm";
+import { EvolutionaryAlgorithm } from "genetics-js/lib/algorithms/EvolutionaryAlgorithm";
 import {
   BinaryIndividual,
   OnePointCrossoverParams,
   BitwiseMutationParams
 } from "genetics-js";
-import { BinaryGeneratorParams } from "genetics-js/lib/lib/generator/binary/BinaryGenerator";
-import { FitnessProportionalSelectionParams } from "genetics-js/lib/lib/selection/base/FitnessProportionalSelection";
+import { BinaryGeneratorParams } from "genetics-js/lib/generator/binary/BinaryGenerator";
+import { FitnessProportionalSelectionParams } from "genetics-js/lib/selection/base/FitnessProportionalSelection";
 
 export interface AlgorithmResultProps {
   items: KnapsackItem[];

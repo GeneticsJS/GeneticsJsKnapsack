@@ -1,6 +1,6 @@
 import React from "react";
 import { BinaryIndividual } from "genetics-js";
-import Population from "genetics-js/lib/lib/population/Population";
+import { Population } from "genetics-js/lib/population/Population";
 import {
   Paper,
   Typography,
